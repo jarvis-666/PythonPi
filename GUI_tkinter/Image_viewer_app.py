@@ -26,8 +26,11 @@ my_img3 = ImageTk.PhotoImage(my_img3)
 
 my_img_list = [my_img0, my_img1, my_img2, my_img3]
 
+<<<<<<< HEAD
 status = Label(root, text=f"Image 1 of {len(my_img_list)}", bd=1, relief=SUNKEN, anchor=E)
 
+=======
+>>>>>>> origin/master
 my_label = Label(image=my_img_list[0])
 my_label.grid(row=0, column=0, columnspan=3)
 
@@ -45,10 +48,13 @@ def next_button(image_number):
     if image_number == 4:   # Disable the button when all images seen
         button_next = Button(root, text=">>>", command=lambda: next_button(1))
 
+<<<<<<< HEAD
     # Updated Status Bar
     status = Label(root, text=f"Image {image_number} of {len(my_img_list)}", bd=1, relief=SUNKEN, anchor=E)
     status.grid(row=2, column=0, columnspan=3, sticky=W + E)
 
+=======
+>>>>>>> origin/master
     my_label.grid(row=0, column=0, columnspan=3)
     button_next.grid(row=1, column=2)
     button_previous.grid(row=1, column=0)
@@ -66,10 +72,13 @@ def previous_button(image_number):
     if image_number == 1:  # Disable the button when all images seen
         button_previous = Button(root, text="<<<", command=lambda: previous_button(4))
 
+<<<<<<< HEAD
     # Updated Status bar
     status = Label(root, text=f"Image {image_number} of {len(my_img_list)}", bd=1, relief=SUNKEN, anchor=E)
     status.grid(row=2, column=0, columnspan=3, sticky=W + E)
 
+=======
+>>>>>>> origin/master
     my_label.grid(row=0, column=0, columnspan=3)
     button_next.grid(row=1, column=2)
     button_previous.grid(row=1, column=0)
@@ -81,7 +90,11 @@ button_quit = Button(root, text="Exit Button", command=root.quit)
 
 button_next.grid(row=1, column=2)
 button_previous.grid(row=1, column=0)
+<<<<<<< HEAD
 button_quit.grid(row=1, column=1, pady=10)
 
 status.grid(row=2, column=0, columnspan=3, sticky=W+E)
+=======
+button_quit.grid(row=1, column=1)
+>>>>>>> origin/master
 root.mainloop()
