@@ -20,7 +20,7 @@ for text, mode in MODES:
     Radiobutton(root, text=text, variable=pizza, value=mode).pack(anchor=W)
 
 def clicked_radio(option):
-    my_label = Label(root, text=f"Option {pizza.get()} selected")
+    my_label = Label(root, text=f"Option {option} selected")
     my_label.pack()
 
 # Radiobutton(root, text="Option1", variable=r, value=1, command=lambda: clicked_radio(r.get())).pack()
