@@ -12,7 +12,8 @@ Decimal gives the Decimal data type which is much better than Float
 sys is needed to set the depth for recursion.
 """
 from __future__ import print_function
-import math, sys
+import math
+import sys
 from decimal import *
 getcontext().rounding = ROUND_FLOOR
 sys.setrecursionlimit(100000)
